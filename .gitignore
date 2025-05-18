@@ -1,0 +1,9 @@
+echo "bin/
+obj/
+.vscode/
+*.DS_Store
+*.user
+*.suo
+*.log
+*.tmp
+*.exe" > .gitignore
