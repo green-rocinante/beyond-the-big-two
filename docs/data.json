@@ -1,0 +1,142 @@
+[
+  {
+    "Type": "PickupPoint",
+    "Postcode": "3222",
+    "Latitude": -38.171,
+    "Longitude": 144.57,
+    "Label": "Farm My School",
+    "OpeningHours": "Mon-Fri 8am-4pm",
+    "AcceptsDonations": false,
+    "Website": null,
+    "Facebook": null,
+    "GoogleMapsUrl": "https://www.google.com/maps/search/?api=1\u0026query=-38.171,144.57"
+  },
+  {
+    "Type": "PickupPoint",
+    "Postcode": "3222",
+    "Latitude": -38.1744,
+    "Longitude": 144.57,
+    "Label": "Bellarine Wholefoods",
+    "OpeningHours": "Mon-Sat 9am-5pm",
+    "AcceptsDonations": false,
+    "Website": null,
+    "Facebook": null,
+    "GoogleMapsUrl": "https://www.google.com/maps/search/?api=1\u0026query=-38.1744,144.57"
+  },
+  {
+    "Type": "PickupPoint",
+    "Postcode": "3226",
+    "Latitude": -38.2672,
+    "Longitude": 144.5265,
+    "Label": "Feed Me Bellarine",
+    "OpeningHours": "Mon-Fri 9am-5pm",
+    "AcceptsDonations": true,
+    "Website": null,
+    "Facebook": null,
+    "GoogleMapsUrl": "https://www.google.com/maps/search/?api=1\u0026query=-38.2672,144.5265"
+  },
+  {
+    "Type": "PickupPoint",
+    "Postcode": "3226",
+    "Latitude": -38.2675,
+    "Longitude": 144.5265,
+    "Label": "My Bellarine Kitchen",
+    "OpeningHours": "Wed-Sun 10am-4pm",
+    "AcceptsDonations": false,
+    "Website": null,
+    "Facebook": null,
+    "GoogleMapsUrl": "https://www.google.com/maps/search/?api=1\u0026query=-38.2675,144.5265"
+  },
+  {
+    "Type": "Producer",
+    "Name": "Zeally Bay Sourdough",
+    "Postcode": "3228",
+    "Latitude": -38.3333,
+    "Longitude": 144.3167,
+    "IsOrganic": true,
+    "IsRegenerative": true,
+    "ProduceTypes": [
+      "Bread",
+      "Bakery"
+    ],
+    "AgroPractices": {
+      "Natural fermentation": "Maintains microbial health"
+    },
+    "Website": "https://zeallybaysourdough.com.au",
+    "Facebook": "https://www.facebook.com/zeallybaysourdough",
+    "GoogleMapsUrl": "https://www.google.com/maps/search/?api=1\u0026query=-38.3333,144.3167"
+  },
+  {
+    "Type": "Producer",
+    "Name": "Tuerong Farm",
+    "Postcode": "3915",
+    "Latitude": -38.2778737,
+    "Longitude": 145.0772523,
+    "IsOrganic": true,
+    "IsRegenerative": true,
+    "ProduceTypes": [
+      "Grains",
+      "Flour"
+    ],
+    "AgroPractices": {
+      "Soil testing": "Used to guide compost and minerals",
+      "Cover cropping": "Improves soil health"
+    },
+    "Website": "https://www.tuerongfarm.com.au",
+    "Facebook": "https://www.facebook.com/tuerongfarm",
+    "GoogleMapsUrl": "https://www.google.com/maps/search/?api=1\u0026query=-38.2778737,145.0772523"
+  },
+  {
+    "Type": "Producer",
+    "Name": "CERES Fair Food",
+    "Postcode": "3057",
+    "Latitude": -37.7749,
+    "Longitude": 144.9634,
+    "IsOrganic": true,
+    "IsRegenerative": false,
+    "ProduceTypes": [
+      "Vegetables",
+      "Fruits"
+    ],
+    "AgroPractices": {},
+    "Website": "https://www.ceresfairfood.org.au",
+    "Facebook": "https://www.facebook.com/ceresfairfood",
+    "GoogleMapsUrl": "https://www.google.com/maps/search/?api=1\u0026query=-37.7749,144.9634"
+  },
+  {
+    "Type": "Producer",
+    "Name": "Black Duck Foods",
+    "Postcode": "3892",
+    "Latitude": -37.55,
+    "Longitude": 149.75,
+    "IsOrganic": true,
+    "IsRegenerative": true,
+    "ProduceTypes": [
+      "Native Grains"
+    ],
+    "AgroPractices": {
+      "Cultural land care": "Led by Indigenous communities"
+    },
+    "Website": "https://www.blackduckfoods.com.au",
+    "Facebook": "https://www.facebook.com/blackduckfoods",
+    "GoogleMapsUrl": "https://www.google.com/maps/search/?api=1\u0026query=-37.55,149.75"
+  },
+  {
+    "Type": "Producer",
+    "Name": "Wholegrain Milling Co.",
+    "Postcode": "2380",
+    "Latitude": -30.9833,
+    "Longitude": 150.25,
+    "IsOrganic": true,
+    "IsRegenerative": true,
+    "ProduceTypes": [
+      "Flour"
+    ],
+    "AgroPractices": {
+      "Stone milling": "Preserves nutrition"
+    },
+    "Website": "https://www.wholegrain.com.au",
+    "Facebook": "https://www.facebook.com/WholegrainMillingCo",
+    "GoogleMapsUrl": "https://www.google.com/maps/search/?api=1\u0026query=-30.9833,150.25"
+  }
+]
