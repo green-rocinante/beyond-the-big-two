@@ -43,7 +43,7 @@ The system was designed using clear **OOP principles**:
 
 ---
 
-## 🗺Map Output Options
+## Map Output Options
 
 ### Option 1: Static Map (Preview Only)
 
