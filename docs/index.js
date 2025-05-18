@@ -1,6 +1,6 @@
 window.onload = function () {
   if (typeof L === 'undefined') {
-    console.error("Leaflet not found. Check loading order.");
+    console.error("Leaflet not loaded.");
     return;
   }
 
@@ -24,11 +24,9 @@ window.onload = function () {
     popupAnchor: [0, -28]
   });
 
-  const markerCluster = L.markerClusterGroup();
-
-  fetch('/data.json')
+  fetch('data.json')  // RELATIVE path – works on GitHub Pages
     .then(res => {
-      if (!res.ok) throw new Error("Failed to fetch data.json");
+      if (!res.ok) throw new Error("Could not load data.json");
       return res.json();
     })
     .then(data => {
@@ -42,7 +40,6 @@ window.onload = function () {
           popup += `<br/>Produce: ${loc.ProduceTypes?.join(', ') || ''}`;
           popup += `<br/>Organic: ${loc.IsOrganic ? 'Yes' : 'No'}`;
           popup += `<br/>Regenerative: ${loc.IsRegenerative ? 'Yes' : 'No'}`;
-
           if (loc.AgroPractices && Object.keys(loc.AgroPractices).length > 0) {
             popup += `<br/><em>Agroecological Practices:</em><ul>`;
             for (const [practice, desc] of Object.entries(loc.AgroPractices)) {
@@ -65,34 +62,12 @@ window.onload = function () {
         }
 
         if (loc.GoogleMapsUrl) {
-          popup += `<br/><a href="${loc.GoogleMapsUrl}" target="_blank">Google Maps</a>`;
-        }
-
-        if (loc.DistanceFromUser !== undefined) {
-          popup += `<br/>Distance: ${loc.DistanceFromUser.toFixed(1)} km`;
+          popup += `<br/><a href="${loc.GoogleMapsUrl}" target="_blank">📍 Google Maps</a>`;
         }
 
         marker.bindPopup(popup);
-        markerCluster.addLayer(marker);
+        marker.addTo(map);
       });
-
-      map.addLayer(markerCluster);
-
-      // Optional filter summary overlay
-      const summary = `
-        <div style="background:white;padding:6px 8px;border-radius:4px;line-height:1.4;font-size:13px;">
-          <strong>Filter Summary:</strong><br/>
-          Max Distance: (based on user input)<br/>
-          Organic / Regenerative filters applied<br/>
-          Donation pickup points included
-        </div>
-      `;
-
-      L.control({ position: 'topright' }).onAdd = function () {
-        const div = L.DomUtil.create('div');
-        div.innerHTML = summary;
-        return div;
-      }.addTo(map);
     })
-    .catch(err => console.error("Error loading data:", err));
+    .catch(err => console.error("Error:", err));
 };
