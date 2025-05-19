@@ -81,5 +81,5 @@ To use the dynamic filtering system and generate live data for the map:
 ## Author
 
 Developed by Ivy Craw
-For Deakin University – SIT771 Object-Oriented Development (T2 2025)
+For Deakin University – SIT771 Object-Oriented Development (T1 2025)
 
